@@ -1,0 +1,1 @@
+For security reasons, you may upload your files in this directory. HTTP request don't have access here because .htaccess redirects to public path
