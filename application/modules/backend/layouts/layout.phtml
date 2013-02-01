@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<?php
+		echo $this->headTitle(). "\n";
+		echo $this->headScript(). "\n";
+        echo $this->headLink(). "\n";
+	?>
+	<link href="<?php echo $this->url; ?>/favicon.ico" rel="shortcut icon">
+	<link href="<?php echo $this->url; ?>/css/main.css" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+
+<header>
+	<a href="<?php echo $this->url; ?>/admin/logout">Cerrar sesión</a>
+</header>
+<!-- /HEADER -->
+
+<div class="wrap">
+	<?php echo $this->layout()->content; ?>
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+</footer>
+<!-- /FOOTER -->
+
+</body>
+</html>

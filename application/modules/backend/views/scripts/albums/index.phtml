@@ -1,0 +1,21 @@
+
+<a href="<?php echo $this->url; ?>/admin/albums/add">Crear</a>
+
+<table width="100%" border="0">
+	<tr>
+		<td>Title</td>
+		<td>Artist</td>
+		<td>Genre</td>
+	</tr>
+<?php foreach ($this->results as $row): ?>
+	<tr>		
+		<td>
+			<a href="<?php echo $this->url; ?>/admin/albums/details/<?php echo $row['id'] ?>">
+				<?php echo $row['title']; ?>
+			</a>
+		</td>		
+		<td><?php echo $row['artist']; ?></td>
+		<td><?php echo $row['genre']; ?></td>
+	</tr>
+<?php endforeach; ?>		
+</table>

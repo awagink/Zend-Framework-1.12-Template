@@ -1,0 +1,54 @@
+<?php
+$errors = $this->form->getMessages();
+function getErrors( $name, $errors ) {
+	if( array_key_exists( $name, $errors ) ) {
+		$message = '';
+		foreach( $errors[$name] as $error ) {
+			$message .= $error;
+		}
+		return $message;
+	}
+}
+?>
+
+<form method="post" action="" >
+
+<fieldset>
+
+	<legend>Edit Album</legend>
+
+	<p>
+		<label for="title">Title</label>
+		<?php echo $this->form->getElement('title'); ?>
+	</p>
+	<?php if( array_key_exists( 'title', $errors ) ) { ?>
+		<div class="errors clear"><?php echo getErrors( 'title', $errors ); ?></div>
+	<?php } ?>
+	
+	<p>
+		<label for="artist">Artist</label>
+		<?php echo $this->form->getElement('artist'); ?>
+		<div class="clear"></div>
+	</p>
+	<?php if( array_key_exists( 'artist', $errors ) ) { ?>
+		<div class="errors clear"><?php echo getErrors( 'artist', $errors ); ?></div>
+	<?php } ?>
+	
+	<p>
+		<label for="genre">Genre</label>
+		<?php echo $this->form->getElement('genre'); ?>
+		<div class="clear"></div>
+	</p>
+	<?php if( array_key_exists( 'genre', $errors ) ) { ?>
+		<div class="errors clear"><?php echo getErrors( 'genre', $errors ); ?></div>
+	<?php } ?>
+	
+	<?php echo $this->form->getElement('csrf'); ?>
+	
+	<p>
+		<input type="submit" value="Update" />
+	</p>
+	
+</fieldset>	
+
+</form>
