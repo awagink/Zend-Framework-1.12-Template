@@ -37,55 +37,30 @@ input, select { vertical-align:middle; }
 
 /* END RESET CSS */
 
-/* Members */
-#wrapper { margin:0 auto; width:90%; max-width:1200px; font-family:Trebuchet MS, Verdana, Arial,sans-serif }
-#wrapper a { text-decoration:none; color:#000; }
-#wrapper a:hover { color:#999; }
-#wrapper a.button { padding:3px 10px; background:#FBFBFB; color:#333; font-size:80%; font-weight:bold; text-align:center; border:solid 1px #999;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
--khtml-border-radius: 5px;
-border-radius: 5px;
-}
-#wrapper a.button:hover { background:#e7ebf2; color:#000; }
-#wrapper input[type="text"]  { padding:3px; width:280px; font-size:70%; height:20px; border:solid 1px #CCC; }
-#wrapper textarea { padding:3px; width:280px; font-size:70%; height:70px; border:solid 1px #CCC; }
+body { font-family:Trebuchet MS, Verdana, Arial,sans-serif; font-size: 100%; }
+h2{ font-size: 140%; margin: 10px 0; }
+a { color:#3494a6; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-#wrapper .profile { float:left; width:22%; min-width:251px; }
-#wrapper .personal table { margin:10px 0; width:100%; font-size:80%; border-top:1px solid #ccc; }
-#wrapper .personal table tr { line-height:1.5em; border-bottom:1px solid #ccc; }
-#wrapper .personal table td { padding:5px 0; }
-#wrapper .personal table td:nth-child(2n+1) { width:27%; color:#47678f; }
+.header, .wrap { margin:0 auto; width:80%; max-width:1200px; }
 
-#wrapper .wall { float:left; width:75%; min-width:320px; }
-#wrapper .wall .user { float:left; width:60%; font-size:120%; min-width:250px;  }
-#wrapper .wall .user span { color:#999; font-style:italic; font-size:100%; }
-#wrapper .wall .actions { float:left; width:39%; min-width:200px;  }
-#wrapper .wall .actions a {float:right; margin-top:10px;}
-#wrapper .view-profile { min-width:320px; }
-#wrapper .items { margin:20px 0; background:#F6F6F6; }
-#wrapper .items h3 { padding:3px; font-size:100%; font-weight:bold; background:#b3d4fd;  }
-#wrapper .items h4 { margin:10px 0 5px 0; padding:2px; font-size:80%; font-weight:bold; background:#FFF; }
-#wrapper .items .item { padding:10px 5px; border-bottom:solid 1px #CCC; }
-#wrapper .items .date { font-size:80%; color:#666; }
-#wrapper .items .submit { float:right; margin:15px 0; width:170px; }
-#wrapper .items table { width:100%; margin-bottom:20px; min-width:320px; font-size:80%; }
-#wrapper .items table td { padding:5px; width:24%; }
-#wrapper .items table tr:nth-child(2n+0) { background:#FFF; }
-#wrapper .items table tr td:nth-child(2n+1){ color:#47678f; }
-#wrapper .items table tr td:nth-child(3) { padding-left:10px; border-left:solid 1px #F1F1F1; }
-#wrapper .items table .desc { width:240px; }
-#wrapper .items table strong { color:#000; }
-#wrapper .items .field { float:left; margin:3px 0; width:33%; min-width:320px; border:0; }
-#wrapper .field:nth-child(3n+1) { clear:left; }
-#wrapper #data3 textarea,#wrapper #data3 input[type="text"],#wrapper #data3 input[type="file"] { width:310px; }
-#wrapper .items label { float:left; width:90px; font-size:80%; }
-#wrapper .items span { font-size:80%; }
-#wrapper .items .sections { margin:10px 0 20px 0;}
-#wrapper .items .errors { color:#9e331a; font-size:60%;}
-#wrapper .items .errors li { list-style-type:none; }
-#wrapper .no-items { margin:50px 0; }
-#wrapper .no-items h3 { margin-bottom:10px; color:#008836; font-size:100%; font-weight:bold; }
+.header a { float: right; }
+
+form { margin: 20px 0; }
+form p { margin: 10px 0; }
+fieldset { padding: 10px; border: solid 1px #F1F1F1; }
+input[type="text"],input[type="password"] { padding: 3px; width: 350px; height: 20px; font-size: 100%;   }
+input[type="submit"] { height: 30px; background-color:#b7d5e5; border: 0; font-size: 100%;  }
+label { float: left; padding-top: 5px; width: 100px; }
+
+table { margin:50px 0; width: 100%; border: 0; }
+table tr:first-child { background-color: #b7d5e5; }
+table tr:nth-child(2n+0) { background-color: #F1F1F1; }
+table td { padding:5px; width:33%;  }
+
+a.action { padding: 5px 25px; background-color:#F1F1F1; text-decoration: none;  }
+a.action:hover { background-color:#CCC; }
+.errors { color: #e3502d; }
 
 /* General Classes */
 .clear { clear:both; }

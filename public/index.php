@@ -14,7 +14,7 @@ defined('APPLICATION_ENV')
     || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
 define('ZEND_LIBRARY_PATH', APPLICATION_PATH . '/../library');
-define('APP_LIBRARY_PATH', '/Users/Jonisiaco/Developer/libs/ZendFramework-1.12.1/library');
+define('APP_LIBRARY_PATH', '/path/ZendFramework-1.12.1/library');
 
 $paths = array(
 	ZEND_LIBRARY_PATH,

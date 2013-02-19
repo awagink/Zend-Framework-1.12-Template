@@ -1,6 +1,8 @@
-<h1>Detalles</h1>
+<a class="action" href="<?php echo $this->url; ?>/admin/albums">Regresar</a>
 
-<table width="40%;">
+<h2>Detalles</h1>
+
+<table>
 	<tr>
 		<td>Title</td>
 		<td><?php echo $this->results['title']; ?></td>
@@ -16,6 +18,6 @@
 </table>
 
 <div>
-	<a href="<?php echo $this->url; ?>/admin/albums/edit/<?php echo $this->results['id']; ?>">Editar</a> 
-	<a onclick="return confirmation('<?php echo $this->url; ?>/admin/albums/delete/<?php echo $this->results['id']; ?>','¿Desea eliminar este item?')" href="#">Eliminar</a>
+	<a class="action" href="<?php echo $this->url; ?>/admin/albums/edit/<?php echo $this->results['id']; ?>">Editar</a> 
+	<a class="action" onclick="return confirmation('<?php echo $this->url; ?>/admin/albums/delete/<?php echo $this->results['id']; ?>','¿Desea eliminar este item?')" href="#">Eliminar</a>
 </div>

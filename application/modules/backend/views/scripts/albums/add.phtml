@@ -10,7 +10,7 @@ function getErrors( $name, $errors ) {
 	}
 }
 ?>
-
+<a class="action" href="<?php echo $this->url; ?>/admin/albums">Regresar</a>
 <form method="post" action="" >
 
 <fieldset>
@@ -20,10 +20,9 @@ function getErrors( $name, $errors ) {
 	<p>
 		<label for="title">Title</label>
 		<?php echo $this->form->getElement('title'); ?>
-		
 	</p>
 	<?php if( array_key_exists( 'title', $errors ) ) { ?>
-		<div class="errors clear"><?php echo getErrors( 'title', $errors ); ?></div>
+		<div class="errors"><?php echo getErrors( 'title', $errors ); ?></div>
 	<?php } ?>
 	
 	<p>
@@ -32,16 +31,15 @@ function getErrors( $name, $errors ) {
 		<div class="clear"></div>
 	</p>
 	<?php if( array_key_exists( 'artist', $errors ) ) { ?>
-		<div class="errors clear"><?php echo getErrors( 'artist', $errors ); ?></div>
+		<div class="errors"><?php echo getErrors( 'artist', $errors ); ?></div>
 	<?php } ?>
 	
 	<p>
 		<label for="genre">Genre</label>
 		<?php echo $this->form->getElement('genre'); ?>
-		<div class="clear"></div>
 	</p>
 	<?php if( array_key_exists( 'genre', $errors ) ) { ?>
-		<div class="errors clear"><?php echo getErrors( 'genre', $errors ); ?></div>
+		<div class="errors"><?php echo getErrors( 'genre', $errors ); ?></div>
 	<?php } ?>
 	
 	<?php echo $this->form->getElement('csrf'); ?>

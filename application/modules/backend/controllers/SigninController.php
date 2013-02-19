@@ -5,6 +5,7 @@ class Backend_SigninController extends Zend_Controller_Action
 
     public function init()
     {
+    	$this->view->request = $this->_request;
         $this->view->url = $this->_request->getBaseUrl();
         $this->view->headTitle("Admin");
     }

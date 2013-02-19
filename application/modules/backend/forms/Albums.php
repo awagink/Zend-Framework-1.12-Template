@@ -21,7 +21,7 @@ class Backend_Form_Albums extends Zend_Form
 		$this->addElement($lastname);
 		
 		$hash = new Zend_Form_Element_Hash('csrf');
-		$hash->setErrorMessages(array('Ha ocurrido un error. Por favor vuelva a intentarlo'));
+		$hash->setErrorMessages(array('Cross-site request forgery protection'));
 		$this->addElement($hash);
 		
 		$this->clearDecorators();

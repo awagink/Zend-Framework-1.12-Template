@@ -13,9 +13,11 @@
 </head>
 <body>
 <!-- HEADER -->
-
-<header>
-	<a href="<?php echo $this->url; ?>/admin/logout">Cerrar sesión</a>
+<header class="header">
+	<?php if($this->request->controller != "signin"){ ?>
+		<a class="action" href="<?php echo $this->url; ?>/admin/logout">Cerrar sesión</a>
+		<div class="clear"></div>
+	<?php } ?>
 </header>
 <!-- /HEADER -->
 

@@ -10,6 +10,7 @@ function getErrors( $name, $errors ) {
 	}
 }
 ?>
+<a class="action" href="<?php echo $this->url; ?>/admin/albums">Regresar</a>
 
 <form method="post" action="" >
 
@@ -46,7 +47,7 @@ function getErrors( $name, $errors ) {
 	<?php echo $this->form->getElement('csrf'); ?>
 	
 	<p>
-		<input type="submit" value="Update" />
+		<input type="submit" value="Actualizar" />
 	</p>
 	
 </fieldset>	
