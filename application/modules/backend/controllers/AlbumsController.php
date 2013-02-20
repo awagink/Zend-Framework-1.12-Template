@@ -111,9 +111,11 @@ class Backend_AlbumsController extends Zend_Controller_Action
 		if(!empty($id)){
 			
 			$mysql = new Application_Model_DbTable_Albums();
-			$results = $mysql->remove($id);
+			$mysql->remove($id);
 			
-		} else { $this->_redirect('/admin/albums'); }
+		} 
+		
+		$this->_redirect('/admin/albums');
 		
 	}
 	

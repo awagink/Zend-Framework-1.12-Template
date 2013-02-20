@@ -18,8 +18,10 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$frontControler = Zend_Controller_Front::getInstance();
 	    $router = $frontControler->getRouter();
 	    
+	    /* FRONTEND MODULE */
+
 	    $router->addRoute( 	"index", new Zend_Controller_Router_Route(
-							"/buscar", array( 'module' => 'frontend', 'controller' => 'index', 'action' => 'search' ) ) );
+							"/inicio", array( 'module' => 'frontend', 'controller' => 'index', 'action' => 'index' ) ) );
 		
 		/* BACKEND MODULE */
 		

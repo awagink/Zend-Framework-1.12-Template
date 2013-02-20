@@ -7,12 +7,12 @@ defined('BASE_PATH')
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
-//define('APPLICATION_PATH', '../application');
 
 // Define application environment
 defined('APPLICATION_ENV')
     || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
+// Define ZF Library path
 define('ZEND_LIBRARY_PATH', APPLICATION_PATH . '/../library');
 define('APP_LIBRARY_PATH', '/path/ZendFramework-1.12.1/library');
 
